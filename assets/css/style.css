@@ -66,7 +66,7 @@ html, body {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none ;
   color: #3CF;
 }
 
@@ -220,30 +220,30 @@ header
 }
 
 .background-header {
-  background-color: #fff!important;
-  height: 80px!important;
-  position: fixed!important;
-  top: 0!important;
+  background-color: #fff;
+  height: 80px;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
 }
 
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: #1e1e1e;
 }
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: #1e1e1e;
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #fb5849!important;
+  color: #fb5849;
 }
 
 .background-header .nav li a.active {
-  color: #fb5849!important;
+  color: #fb5849;
 }
 
 .header-area {
@@ -283,7 +283,7 @@ header
 }
 
 .background-header .nav {
-  margin-top: 20px !important;
+  margin-top: 20px ;
 }
 
 .header-area .main-nav .nav {
@@ -326,12 +326,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #f5a425!important;
+  color: #f5a425;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #f5a425!important;
+  color: #f5a425;
   opacity: 1;
 }
 
@@ -377,7 +377,7 @@ header
   opacity: 1;
   display: block;
   background: #f7f7f7;
-  color: #2a2a2a!important;
+  color: #2a2a2a;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -393,7 +393,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #f5a425!important;
+  color: #f5a425;
   padding-left: 25px;
 }
 
@@ -524,7 +524,7 @@ header
   background-color: #1e1e1e;
 }
 
-.header-area.header-sticky {
+.header-area .header-sticky {
   min-height: 80px;
 }
 
@@ -552,7 +552,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #f5a425!important;
+    color: #f5a425;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -572,7 +572,7 @@ header
     margin-left: 30px;
   }
   .header-area .menu-trigger {
-    display: block !important;
+    display: block ;
   }
   .header-area .main-nav {
     overflow: hidden;
@@ -591,26 +591,26 @@ header
     border-top: 1px solid #eee;
   }
   .header-area.header-sticky .nav {
-    margin-top: 100px !important;
+    margin-top: 100px ;
   }
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
     border-bottom: 1px solid #eee;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 0px ;
+    padding-right: 0px ;
   }
   .header-area .main-nav .nav li a {
-    height: 50px !important;
-    line-height: 50px !important;
-    padding: 0px !important;
-    border: none !important;
-    background: #f7f7f7 !important;
-    color: #191a20 !important;
+    height: 50px ;
+    line-height: 50px ;
+    padding: 0px ;
+    border: none ;
+    background: #f7f7f7 ;
+    color: #191a20 ;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
-    color: #f5a425!important;
+    background: #eee ;
+    color: #f5a425;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -647,7 +647,7 @@ header
 
 @media (min-width: 767px) {
   .header-area .main-nav .nav {
-    display: flex !important;
+    display: flex ;
   }
 }
 
@@ -675,7 +675,7 @@ banner
 }
 
 #bg-video::-webkit-media-controls {
-    display: none !important;
+    display: none;
 }
 
 .video-overlay {
@@ -783,7 +783,7 @@ services
 }
 
 .services .owl-nav {
-  display: inline-block !important;
+  display: inline-block;
   text-align: center;
   position: absolute;
   width: 100%;
@@ -854,14 +854,25 @@ services
   height: 50px;
   border-radius: 50%;
   line-height: 50px;
-}
+} 
 
 
 /*
 ---------------------------------------------
-upcoming meetings
+upcoming services
 ---------------------------------------------
 */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 section.available-services {
   background-image: url(../images/vecteezy_seamless-pattern-with-building-elements-outline-vector_14531956.jpg);
@@ -922,15 +933,26 @@ section.available-services .categories .main-button-red a {
 
 .services-item {
   margin-bottom: 30px;
+  margin: 20px;
+  width: 100%;
+  height: 350px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .services-item .thumb {
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+
 }
 
 .services-item .thumb img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .services-item .thumb .price {
@@ -950,7 +972,8 @@ section.available-services .categories .main-button-red a {
 
 .services-item .down-content {
   background-color: #fff;
-  padding: 30px;
+  padding: 20px;
+  text-align: center;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -966,12 +989,12 @@ section.available-services .categories .main-button-red a {
 }
 
 .services-item .down-content p {
-  margin-left: 50px;
+
   color: #1f272b;
   font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
-
-
 
 
 
@@ -995,6 +1018,12 @@ section.available-services .categories .main-button-red a {
   cursor: pointer;
   transition: color 200ms ease-in-out;
   border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .services-item {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .accordion-head {
