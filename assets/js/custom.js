@@ -14,23 +14,25 @@
 	  }
 	});
 	
-	$('.filters ul li').click(function(){
-        $('.filters ul li').removeClass('active');
-        $(this).addClass('active');
-          
-          var data = $(this).attr('data-filter');
-          $grid.isotope({
-            filter: data
-          })
-        });
-
-        var $grid = $(".grid").isotope({
-          itemSelector: ".all",
-          percentPosition: true,
-          masonry: {
-            columnWidth: ".all"
-          }
-        });
+	$(document).ready(function() {
+		// Add click event to filter buttons
+		$('.filters li').click(function() {
+		  // Remove active class from all buttons
+		  $('.filters li').removeClass('active');
+		  // Add active class to clicked button
+		  $(this).addClass('active');
+		  // Get filter value
+		  var filterValue = $(this).attr('data-filter');
+		  // Show/hide cards based on filter value
+		  if (filterValue == '*') {
+			$('.card').show();
+		  } else {
+			$('.card').hide();
+			$(filterValue).show();
+		  }
+		});
+	  });
+	  
 
 
 	const Accordion = {
